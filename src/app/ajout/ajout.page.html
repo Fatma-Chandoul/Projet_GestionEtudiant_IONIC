@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ajout</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="back">
+  <ion-card color="secondary">
+    <ion-card-title>
+      <h2>
+        Ajout des étudiants
+      </h2>
+    </ion-card-title>
+  </ion-card>
+  <ion-item class="item">
+    <ion-label position="floating">Nom</ion-label>
+    <ion-input type="text" [(ngModel)]="nom"></ion-input>
+  </ion-item>
+  <ion-item class="item">
+    <ion-label position="floating">prenom</ion-label>
+    <ion-input type="text" [(ngModel)]="prenom"></ion-input>
+  </ion-item>
+  <ion-item class="item">
+    <ion-label position="floating">groupe</ion-label>
+    <ion-input type="text" [(ngModel)]="groupe"></ion-input>
+  </ion-item>
+  <ion-button color="primary" expand="block" (click)="ajouter();"> Ajouter</ion-button>
+
+
+</ion-content>

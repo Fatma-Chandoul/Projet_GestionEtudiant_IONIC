@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>modifie</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="back">
+  <ion-card color="danger">
+    <ion-card-title>
+      <h2>
+        Modifier des étudiants
+      </h2>
+    </ion-card-title>
+  </ion-card>
+  <ion-item class="item">
+    <ion-label position="floating">Nom</ion-label>
+    <ion-input type="text" [(ngModel)]="etd.nom"></ion-input>
+  </ion-item>
+  <ion-item class="item">
+    <ion-label position="floating">prenom</ion-label>
+    <ion-input type="text"  [(ngModel)]="etd.prenom"></ion-input>
+  </ion-item>
+  <ion-item class="item">
+    <ion-label position="floating">groupe</ion-label>
+    <ion-input type="text"  [(ngModel)]="etd.groupe"></ion-input>
+  </ion-item>
+  <ion-button color="primary" expand="block" (click)="maj();"> Modifier</ion-button>
+
+
+</ion-content>

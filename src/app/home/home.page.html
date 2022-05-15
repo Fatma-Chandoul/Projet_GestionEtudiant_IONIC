@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="back">
+  <ion-card color="primary">
+    <ion-card-title>
+      <h2>
+        Gestion des étudiants
+      </h2>
+    </ion-card-title>
+  </ion-card>
+  <ion-button (click)="lien1();">
+    <ion-icon slot="start" name="add-circle-outline">
+
+    </ion-icon>
+    Ajouter un étudiant
+  </ion-button>
+
+  <ion-list class="item">
+    <ion-item *ngFor="let e of etds">
+      <ion-avatar slot="start">
+        <img src="assets/avatar1.png" />
+      </ion-avatar>
+      <ion-label>
+        <h2>{{e.prenom}} {{e.nom}}</h2>
+        <p>{{e.groupe}}</p>
+      </ion-label>
+      <ion-note slot="end">
+        <ion-button color="danger" (click)="supp(e);">DEL</ion-button>
+        <ion-button color="secondary" (click)="update(e)">MODIF</ion-button>
+
+      </ion-note>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
